@@ -4,8 +4,8 @@ public class HashMapRunner {
 
 	public static void main(String args[]) {
 		String string="to be or not to be";
-		MyHashMap<String,Integer> myHashMap=new MyHashMap();
-		String [] words=string.split(" ");
+		MyHashMap<String,Integer> myHashMap=new MyHashMap<>();
+		String [] words=string.toLowerCase().split(" ");
 		for(String word : words) {
 			Integer value=myHashMap.get(word);
 			if(value==null) {
